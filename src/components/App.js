@@ -9,6 +9,7 @@ const dispatch=useDispatch();
 const {name,email}=useSelector((state)=>state.user);
   return (
     <div>
+      <h1>User Information</h1>
         {/* Do not remove the main div */}
         <p>Name:</p>
         <input 
@@ -18,7 +19,7 @@ const {name,email}=useSelector((state)=>state.user);
       />
       <p>Email:</p>
         <input 
-        type="text"
+        type="email"
         onChange={(e)=>dispatch(setEmail(e.target.value))}
         value={email}
       />
