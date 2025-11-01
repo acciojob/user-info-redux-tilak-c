@@ -26,7 +26,7 @@ const {name,email}=useSelector((state)=>state.user);
       <br></br>
       <p>Current values in store: </p>
     <p className="output">Name - {name}</p>
-    <p>Email - {email}</p>
+    <p className="output">Email - {email}</p>
     </div>
   )
 }
